@@ -1,0 +1,45 @@
+
+
+
+
+#main {
+   text-align: center;
+}
+
+
+#title{
+    text-align:center;
+}
+#startbutton{
+    text-align:center;
+
+}
+.success {color: green;}
+body{
+background-image: url("https://previews.123rf.com/images/aimage/aimage1702/aimage170200008/71253705-smart-home-automation-blue-and-gray-background-with-polygons-and-icons-as-example-for-internet-of-th.jpg");
+}
+
+
+.boxed {
+  border: 50px solid green ;
+}
+
+#Question{
+    padding: 30px;
+    background-color: #9bfdd1;
+    display: inline-block;
+    margin-bottom: 1px;
+    font-size: 30px;
+    border: solid;
+    border-color: aqua;
+    border-width: 7px;
+    border-radius: 17px;
+}
+.options{
+    background-color: white;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 20px;
+    border: solid;
+    border-color: #ad76da;
+}

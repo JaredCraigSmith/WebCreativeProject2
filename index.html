@@ -1,19 +1,48 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" src="index.css"/>
-</head>
-<body id="MainBody">
-    <div>Random Trivia!!!</div>
-    <button onclick="GetRandomQuestion()">Test</button>
-    <div id="TestDisplay">Test Display</div>
-    <div id="Option1">Test Answer</div>
-    <button onclick="CheckAnswer('Option1')">Test2</button>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-</body>
-</html>
+    <html>
+
+    <head>
+        <title>TRIVIA</title>
+        <link rel="stylesheet" href="./main.css">
+
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
+
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="logo"><a href="http://52.15.200.240/creative2/index.html" title="Triviaplaza homepage"><img src="https://upload.wikimedia.org/wikipedia/en/archive/2/27/20100328194043%21Trivia.png" width ="600"></a></div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div id="startbutton">
+                <input type="image" onclick="GetAndDisplayRandomQuestion()" src="http://conejo.com/travel-quiz/images/728_start-quiz-button_.png" />
+            </div>
+            <div style="margin-bottom:10px">
+                <div id="Question">Question</div>
+            </div>
+            
+            
+            <div id="Option1" class="options" onclick="DisplayCheckAnswer('Option1')">Option1</div>
+            <div id="Option2" class="options" onclick="DisplayCheckAnswer('Option2')">Option2</div>
+            <div id="Option3" class="options" onclick="DisplayCheckAnswer('Option3')">Option3</div>
+            <div id="Option4" class="options" onclick="DisplayCheckAnswer('Option4')">Option4</div>
+
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="index.js"></script>
+    </body>
+
+    </html>
