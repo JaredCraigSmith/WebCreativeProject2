@@ -55,7 +55,7 @@ function CheckAnswer(OptionID) {
 function DisplayCheckAnswer(Optionid){
     if(CheckAnswer(Optionid))
     {
-        $("#"+Optionid).css("background-color","green")
+        $("#"+Optionid).css("background-color", "#6bf442")
     }
     
     else
