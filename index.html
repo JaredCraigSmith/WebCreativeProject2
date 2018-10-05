@@ -2,47 +2,41 @@
 <html>
 
 <head>
+    <title>TRIVIA</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js">
+    </script>
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="logo"><a href="http://52.15.200.240/creative2/index.html" title="Triviaplaza homepage"><img src="https://upload.wikimedia.org/wikipedia/en/archive/2/27/20100328194043%21Trivia.png" width="600"></a></div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="startbutton">
+            <input type="image" onclick="GetAndDisplayRandomQuestion()" src="data:image/jpeg;base64,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" />
+        </div>
+        <div style="margin-bottom:10px">
+            <div id="Question">Question</div>
+        </div>
+
+        <div id="Option1" class="options" onclick="DisplayCheckAnswer('Option1')">Option1</div>
+        <div id="Option2" class="options" onclick="DisplayCheckAnswer('Option2')">Option2</div>
+        <div id="Option3" class="options" onclick="DisplayCheckAnswer('Option3')">Option3</div>
+        <div id="Option4" class="options" onclick="DisplayCheckAnswer('Option4')">Option4</div>
 
 
-    <html>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </div>
+</body>
 
-    <head>
-        <title>TRIVIA</title>
-        <link rel="stylesheet" href="./main.css">
-
-        <script src="http://code.jquery.com/jquery-3.2.1.min.js">
-        </script>
-
-    </head>
-
-    <body>
-        <div id="main">
-            <div id="logo"><a href="http://52.15.200.240/creative2/index.html" title="Triviaplaza homepage"><img src="https://upload.wikimedia.org/wikipedia/en/archive/2/27/20100328194043%21Trivia.png" width ="600"></a></div>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <div id="startbutton">
-                <input type="image" onclick="GetAndDisplayRandomQuestion()" src="http://conejo.com/travel-quiz/images/728_start-quiz-button_.png" />
-            </div>
-            <div style="margin-bottom:10px">
-                <div id="Question">Question</div>
-            </div>
-            
-            
-            <div id="Option1" class="options" onclick="DisplayCheckAnswer('Option1')">Option1</div>
-            <div id="Option2" class="options" onclick="DisplayCheckAnswer('Option2')">Option2</div>
-            <div id="Option3" class="options" onclick="DisplayCheckAnswer('Option3')">Option3</div>
-            <div id="Option4" class="options" onclick="DisplayCheckAnswer('Option4')">Option4</div>
-
-
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="index.js"></script>
-    </body>
-
-    </html>
+</html>
