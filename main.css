@@ -1,7 +1,5 @@
 
 
-
-
 #main {
    text-align: center;
 }
@@ -34,12 +32,15 @@ background-image: url("https://previews.123rf.com/images/aimage/aimage1702/aimag
     border-color: aqua;
     border-width: 7px;
     border-radius: 17px;
+    opacity: .8;
 }
 .options{
+    padding-top:40px;
     background-color: white;
     display: inline-block;
     padding: 15px;
     border-radius: 20px;
     border: solid;
     border-color: #ad76da;
+    opacity: .8;
 }
